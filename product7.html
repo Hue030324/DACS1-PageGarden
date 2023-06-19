@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageGarden</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--font font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+
+    
+</head>
+<body>
+    <!--header section starts-->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="featured.html">featured</a>
+                <a href="arrivals.html">arrivals</a>
+                <a href="reviews.html">reviews</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </div>
+    </header>
+
+<!-- header section ends -->
+<!-- bottom navbar-->
+
+<nav class="bottom-navbar">
+    <a href="index.html" class="fas fa-home"></a>
+    <a href="featured.html" class="fas fa-list"></a>
+    <a href="arrivals.html" class="fas fa-tags"></a>
+    <a href="reviews.html" class="fas fa-comments"></a>
+    <a href="contact.html" class="fas fa-address-book"></a>
+</nav>
+
+<!--login form-->
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <!-- signin -->
+    
+    <div class="container">
+		<form action="#" class="login active">
+			<h3>sign in</h3>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address">
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span>At least 8 characters</span>
+			</div>
+
+            <div class="remember">
+                <input type="checkbox" name="" id="">
+                <label> Remember me</label>
+            </div>
+
+			<button type="submit" class="btn">Login</button>
+
+            <div class="signUp-link">
+                <a href="#">Forgot password?</a>
+                <p>I don't have an account. <a href="#" onclick="switchForm('register', event)">sign up</a></p>
+            </div>
+			
+            <div class="social-flatform">
+                <p>Or sign in with</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+		</form>
+
+		<form action="#" class="register">
+			<h3>sign up</h3>
+
+            <div class="form-group">
+                <label for="username">username</label>
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username">
+                    <i class='bx bx-user' ></i>
+                </div>
+            </div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address">
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span>At least 8 characters</span>
+			</div>
+
+			<div class="form-group">
+				<label for="confirm-pass">Confirm password</label>
+				<div class="input-group">
+					<input type="password" id="confirm-pass" placeholder="Enter password again">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span> Confirm password must be same with password</span>
+			</div>
+
+            <div class="remember">
+                <input type="checkbox" name="" id="">
+                <label>I agree to the terms & conditions</label>
+            </div>
+
+			<button type="submit" class="btn">sign up</button>
+
+            <div class="signUp-link">
+                <p>I already have an account. <a href="#" onclick="switchForm('login', event)">Sign In</a></p>
+            </div>
+			
+		</form>
+	</div>
+
+</div>
+
+
+<section class="product-content">
+    <div class="pro">
+        <div class="product-top">
+        </div>
+        <div class="product-content row">
+            <div class="product-content-left row">
+                <div class="product-content-left-big-img">
+
+                    <img src="img/book7.png">
+                </div>
+                 <div class="product-content-left-small-img">
+                     <img src="img/book7.png">
+                    <img src="img/book7.1.jpg">
+                    <img src="img/book7.2.jpg">
+                </div>
+            </div>
+            
+            <div class="product-content-right">
+                <div class="product-content-right-product-name">
+                    <h1>THINK JAVA</h1>
+                    <p>MSP: 10PG105</p>
+                </div>
+
+
+
+                <div class="product-content-right-product-feeback">
+                    <div class="product-content-right-product-star">
+                        <p>4.9 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                    </div>
+                    <div class="product-content-right-product-Evaluate">
+                        <p>10,2k <small>Evaluate</small></p>
+                    </div>
+                    <div class="product-content-right-product-sold">
+                        <p>10,4k<small> Sold</small></p>
+                    </div>
+                    
+                </div>
+
+                <div class="product-content-right-product-price">
+                    <div class="cost"><small>$30.99</small></div>
+                    <div class="price">$22.99</div>
+                    <div class="sale">15,9% OFF</div>
+                </div>
+                <div class="product-content-right-product-deal">
+                      <p style="font-weight: bold;">Deal</p>
+                      <div>Buy with shock deal</div>
+                </div>
+                <div class="quantity" >
+                    <p style="font-weight: bold;">Quantity:</p>
+                    <input type="number" min="0" value="1">
+                    <p> 100 Products Available</p>
+                    <br>  
+                </div>
+                <div class="product-content-right-product-button">
+                     
+                        <button class="cart"><i class="fas fa-shopping-cart"></i><p>add to cart</p></button>
+                        <button class="buy">buy now</button>
+                </div>
+                <div class="product-content-right-product-icon">
+                        <div class="product-content-right-product-icon-item">
+                            <a href="#" title="+0123456789"><i class="fa-solid fa-phone-flip"></i> Hotline</a>
+                        </div>
+                        <div class="product-content-right-product-icon-item">
+                            <a href="#" title="22itb@vku.udn.vn"><i class="fa-solid fa-envelope"></i> Mail</a>
+                        </div>
+                        <div class="product-content-right-product-icon-item">
+                            <a href="#" title="Chat"><i class="far fa-comments"></i> Chat</a>
+                        </div>
+                </div>
+
+            </div>
+         </div>
+        <div class="product-content-bottom">
+            <div class="product-content-bottom-top">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="product-content-bottom-content-big">
+                <div class="product-content-bottom-content-title">
+                    <div class="product-content-bottom-content-title-item chitiet">
+                        <p>DETAILS INFORMATION</p>
+                    </div>
+                    <div class="product-content-bottom-content-title-item gioithieu">
+                        <p>PRODUCT INTRODUCTION</p>
+                    </div> 
+                    <div class="product-content-bottom-content-title-item pictures">
+                        <p>PICTURES</p>
+                    </div>   
+                </div>
+                <div class="product-content-bottom-content">
+                    <div class="product-content-bottom-content-chitiet">
+                        The Pragmatic Programmer: From Journeyman to Master is a book about computer programming and software engineering, written by Andrew Hunt and David Thomas and published in October 1999. <br>
+                        It is used as a textbook in related university courses.<br>
+                        First published: October 1999<br>
+                        Author: Dave Thomas, Andy Hunt
+                    </div>
+                    <div class="product-content-bottom-content-gioithieu">
+                        Currently used at many colleges, universities, and high schools, this hands-on introduction to computer science is ideal for people with little or no programming experience. The goal of this concise book is not just to teach you Java, but to help you think like a computer scientist. You’ll learn how to program—a useful skill by itself—but you’ll also discover how to use programming as a means to an end.<br>
+                        Authors Allen Downey and Chris Mayfield start with the most basic concepts and gradually move into topics that are more complex, such as recursion and object-oriented programming. Each brief chapter covers the material for one week of a college course and includes exercises to help you practice what you’ve learned.<br>
+                        <li>Learn one concept at a time: tackle complex topics in a series of small steps with examples</li> 
+                        <li>Understand how to formulate problems, think creatively about solutions, and write programs clearly and accurately</li>
+                        <li>Determine which development techniques work best for you, and practice the important skill of debugging</li>
+                        <li>Learn relationships among input and output, decisions and loops, classes and methods, strings and arrays</li>
+                         <li>Work on exercises involving word games, graphics, puzzles, and playing cards</li>
+
+
+                    </div>
+                    <div class="product-content-bottom-content-img">
+                        <div class="product-content-left-small-img">
+                            <img src="img/book7.png">
+                            <img src="img/book7.1.jpg">
+                            <img src="img/book7.2.jpg">
+
+        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product2.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>morden software engineering</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product4.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>life 3.0</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product5.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>phát minh cuối cùng</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product1.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>the pragmatic programmer</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product7.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>think java</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product6.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/Book6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>kỷ nguyên trí tuyện nhân tạo</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product9.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/Book9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>các siêu cường AI..</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product10.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/book10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>the c++ standard library</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="product12.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/Book12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>effective java</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="thecleancoder.html" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/thecleancoder.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>the clean coder</h3>
+                    <div class="price">$22.99 <span>$30.99</span></div>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<section class="arrivals" id="arrivals">
+
+    <!-- <h1 class="heading"> <span>new arrivals</span></h1> -->
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="product1.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>the pragmatic programmer</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product2.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>morden software engineering</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product3.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>cuộc chiến công nghệ số</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>life 3.0</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product5.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>phát minh cuối cùng</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="product6.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/Book6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>kỷ nguyên trí tuyện nhân tạo</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product7.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>think java</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product8.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>phân tích dữ liệu với R</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product9.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>các siêu cường AI Trung Quốc..</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="product10.html" class="swiper-slide box">
+                <div class="image">
+                    <img src="img/book10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>the c++ standard library</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+    
+                <a href="product11.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/book11.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>kỹ thuật lập trình C</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="product12.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/book12.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>effective java</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="product13.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/book13.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>think python</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="product14.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/book14.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>python machine learning</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="code2.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/Code2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>code complete 2</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="Footbox">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <p>folow us on our social media to know all about new books</p>
+
+            <div class="share">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="Footbox">
+            <h3> contact info </h3>
+
+            <a href="#" class="links"><i class="fa-solid fa-phone-flip"></i>+ 0123456789</a>
+            <a href="#" class="links"><i class="fa-solid fa-envelope"></i>22itb@vku.udn.vn</a>
+            <a href="#" class="links"><i class="fa-solid fa-location-dot"></i>470 Tran Dai Nghia Street, Ngu Hanh Son, Da Nang, Viet Nam</a>
+        </div>
+
+        <div class="Footbox">
+            <h3> quick links </h3>
+
+            <a href="#home" class="links"><i class="fa-sharp fa-solid fa-circle-right"></i>home</a>
+            <a href="#featured" class="links"><i class="fa-sharp fa-solid fa-circle-right"></i>featured</a>
+            <a href="#arrivals" class="links"><i class="fa-sharp fa-solid fa-circle-right"></i>arrivals</a>
+            <a href="#reviews" class="links"><i class="fa-sharp fa-solid fa-circle-right"></i>reviews</a>
+            <a href="#contact" class="links"><i class="fa-sharp fa-solid fa-circle-right"></i>contact us</a>
+
+        </div>
+
+        <div class="Footbox">
+            <h3> newsletter </h3>
+
+            <p>subcribe for latest updates</p>
+            <input type="email" name="" placeholder="enter your email..." id="" class="box">
+            <input type="submit" value="subcribe" class="btn">
+            <img src="img/payment.png" alt="" class="payment-img">
+        </div>
+
+    </div>
+
+    <div class="credit">Created by <span>Hue & An</span> | All right resrved !</div>
+
+</section>
+
+
+
+<!-- footer section ends -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- custom Javascript file link-->
+<script src="script.js"></script>    
+</body>
+</html>
+
+
