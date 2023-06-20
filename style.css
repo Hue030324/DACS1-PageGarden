@@ -1356,6 +1356,9 @@ section{
         width: 17rem;
     }
 
+    .footer .box-container .Footbox img{
+        display: grid;
+    }
 
 }
 
