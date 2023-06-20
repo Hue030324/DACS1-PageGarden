@@ -1327,9 +1327,10 @@ section{
 
     .contactus .heading span{
         font-size: 2.5rem;
+        
     }
 
-    .contactUs .cont-box{
+    .contactus .cont-box{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
