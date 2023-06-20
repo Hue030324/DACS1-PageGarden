@@ -136,15 +136,15 @@ section{
     
 }
 .price{
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #ee4d2d;
 }
 .sale{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
     background: #ee4d2d;
     border-radius: 2px;
-    padding: 0 1rem 0 1rem;
+    padding: 0 .5rem 0 .5rem;
     margin-left: 1.5rem;
     
 }
@@ -177,8 +177,8 @@ section{
 }
 .quantity input{
     width: 40px;
-    padding-left: 8px;
-    margin-left: 5px;
+    /* padding-left: 8px; */
+    /* margin-left: 5px; */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -191,8 +191,8 @@ section{
 }
 .product-content-right-product-button button{
     height: 45px;
-    display: block;
-    margin: 20px 0 12px;
+    /* display: block; */
+    /* margin: 20px 0 12px; */
     transition: all 0.3s ease;
     display: flex;
     justify-content: space-evenly;
@@ -201,7 +201,7 @@ section{
     cursor: pointer;   
     margin-right: 20px;    
     margin-top: 10px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: .9rem;
 }
 .cart{
@@ -251,15 +251,16 @@ section{
     position: absolute;
     left: 50%;
     top: -2rem;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     cursor: pointer;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .product-content-bottom-top i{
     display: block;
     width: 3.3rem;
     height: 3.3rem;
-    background: transparent;
     border: var(--border);
     border-color: var(--dark-color);
     background: #fff;
@@ -269,6 +270,7 @@ section{
     font-size: 2.2rem;
     line-height: 3.3rem;
     margin: .8rem .5rem 0;
+    justify-content: center;
 }
 .product-content-bottom-top:hover i{
     background: var(--dark-color);
@@ -296,6 +298,7 @@ section{
     padding-top: 30px;   
     padding-left: 2rem;
     font-size: 1.5rem;
+    padding-right: 2rem;
 }
 
 .product-content-bottom-content-gioithieu{
@@ -408,38 +411,49 @@ section{
     .footer .box-container .Footbox .logo img{
         width: 17rem;
     }
+
+
     .product-content-right-product-name h1{
-        font-size: 2.8rem;
+        padding-top: 2rem;
+        font-size: 2.5rem;
     }
 
     .product-content-right-product-name p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .product-content-right-product-feeback{
         font-size: 1.5rem;
     }
     .product-content-right-product-star i{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .product-content-right-product-price .cost{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .product-content-right-product-price .price{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .product-content-right-product-price .sale{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     .product-content-right-product-deal{
         font-size: 1.5rem;
     }
+
+    .product-content-right-product-deal div{
+        padding: 0 .5rem;
+    }
+
     .quantity p{
         font-size: 1.5rem;
     }
     .quantity input{
-        width: 35px;
-        font-size: 1.5rem;
+        width: 30px;
+        font-size: 1.2rem;
     }
+    /* .product-content-right-product-button{
+        display: block;
+    } */
     .product-content-right-product-button button{
         height: 40px;
         font-size: 1.7rem;
@@ -468,5 +482,35 @@ section{
 
     html{
         font-size: 50%;
+    }
+
+    .product-content {
+        display: block;
+        
+    }
+
+    .product-content-left{
+        width: 100%;
+    }
+
+    .product-content-left-big-img{
+        width: 100%;
+    }
+
+    .product-content-left .product-content-left-small-img{
+        display: none;
+    }
+
+    .product-content-left {
+        width: 100%;
+    }
+
+    .product-content-right{
+        width: 100%;
+    }
+
+    .product-content-bottom-content{
+        text-align: justify;
+        
     }
 }
