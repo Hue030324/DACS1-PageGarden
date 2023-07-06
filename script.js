@@ -60,13 +60,21 @@ registerPassword.addEventListener('input', function () {
 	registerConfirmPassword.pattern = `${this.value}`;
 })
 
+
+// -----------------loader------------
+
 function loader(){
   document.querySelector('.loader-container').classList.add('active');
 }
 
 function fadeOut(){
-  setTimeout(loader, 500);
+  setTimeout(loader, 400);
+  
 }
+// -----------------loader------------
+
+
+
 
 //-----------------product------------------
 
@@ -111,7 +119,11 @@ const button  =document.querySelector(".product-content-bottom-top")
     document.querySelector(".product-content-bottom-content-big").classList.toggle("activeB")
     })
  }
+ 
+//-----------------product------------------
 
+
+ // slide cua phan book o dau trang home
 
 var swiper = new Swiper(".books-slider", {
     loop: true,
@@ -132,6 +144,8 @@ var swiper = new Swiper(".books-slider", {
       },
     },
   });
+
+  // slide cua phan featured 
 
   var swiper = new Swiper(".featured-slider", {
     spaceBetween: 10,
@@ -161,6 +175,8 @@ var swiper = new Swiper(".books-slider", {
     },
   });
 
+  // slide cua phan arrivals
+
   var swiper = new Swiper(".arrivals-slider", {
     spaceBetween: 10,
     loop: true,
@@ -182,8 +198,10 @@ var swiper = new Swiper(".books-slider", {
     },
   });
 
+  // slide cua phan reviews
+
   var swiper = new Swiper(".reviews-slider", {
-    spaceBetween: 30,
+    spaceBetween: 10,
     grapCursor: true,
     loop: true,
     autoplay: {

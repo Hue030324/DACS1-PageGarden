@@ -88,7 +88,7 @@ section{
 .heading a span:hover{
     background: var(--dark-color);
 }
-/* heading */
+/* heading end */
 
 .btn{
     margin-top: 1rem;
@@ -177,7 +177,7 @@ section{
     color: var(--green);
 }
 
-/* header 1 */
+/* header 1 end */
 
 #search-btn{
     display: none;
@@ -235,7 +235,7 @@ section{
 
 /* bottom navbar */
 
-/* login form */
+/* -------------------- login form ------------------------end*/
 
 .login-form-container{
     display: flex;
@@ -322,7 +322,7 @@ section{
     border: 1px solid var(--green);
 }
 
-/* Validation */
+/*-------------- Validation --------------------*/
 .login-form-container .container form .form-group .input-group input:focus,
 .login-form-container .container form .form-group .input-group input:not(:placeholder-shown) {
 	border-color: var(--green);
@@ -354,7 +354,7 @@ section{
 .login-form-container .container form .form-group .input-group input:focus:placeholder-shown {
 	box-shadow: 0 0 0 .1rem rgb(137, 213, 139);
 }
-/* Validation */
+/*------------- Validation ----------------*/
 
 
 .login-form-container .container form .form-group .input-group i {
@@ -464,7 +464,6 @@ section{
 
 
 
-
 .login-form-container #close-login-btn{
     position: absolute;
     top: 1.5rem; right: 2.5rem;
@@ -473,11 +472,10 @@ section{
     cursor: pointer;
 }
 
-/* login form */
+/* -------------------- login form ------------------------end*/
 
 
-/* home */
-
+/*------------------------ home --------------------------starts */
 .home{
     background: url(img/banner-bg.jpg) no-repeat;
     background-size: cover;
@@ -527,10 +525,10 @@ section{
     padding: 1rem 0;
 }
 
-/* home */
+/*------------------------ home --------------------------end */
 
 
-/* icons */
+/*------------------------ icons ------------------------starts*/
 
 .icons-container{
     display: grid;
@@ -563,12 +561,10 @@ section{
     font-size: 1.4rem;
     color: var(--light-color);
 }
+/*------------------------ icons ------------------------end */
 
 
-/* icons */
-
-
-/* featured */
+/*----------------------- featured ---------------------- starts */
 
 .featured .featured-slider .box{
     margin: 2rem 0;
@@ -644,7 +640,7 @@ section{
 }
 
 
-/* swiper-button */
+/*---------- swiper-button ------------*/
 
 .swiper-button-next,
 .swiper-button-prev{
@@ -667,12 +663,12 @@ section{
     color: #fff;
 }
 
-/* swiper-button */
+/* ------ swiper-button ------- */
 
-/* featured */
+/*----------------------- featured ---------------------- end */
 
 
-/* newsletter */
+/*---------------------- newsletter --------------------- starts */
 
 .newsletter{
     background: url(img/news.jpg) no-repeat;
@@ -710,6 +706,7 @@ section{
     border: 1px solid var(--green);
 }
 
+/*--------------- validation ------------------*/
 .newsletter form input[type='email']:focus,
 .newsletter form input[type='email']:focus:not(:placeholder-shown){
     border-color: var(--green);
@@ -733,11 +730,13 @@ section{
 .newsletter form input[type='email']:focus:invalid {
 	box-shadow: 0 0 0 .2rem var(--light-red);
 }
+/*--------------- validation ------------------*/
 
-/* newsletter */
+/*---------------------- newsletter --------------------- end */
 
 
-/* arrivals */
+
+/*---------------------- arrivals ---------------------- starts */
 
 .arrivals .arrivals-slider .box{
     display: flex;
@@ -781,10 +780,10 @@ section{
     color: var(--green);
 }
 
-/* arrivals */
+/*---------------------- arrivals ----------------------end */
 
 
-/* reviews */
+/*---------------------- reviews ---------------------- starts */
 
 .reviews .reviews-slider .box{
     border: var(--border);
@@ -825,10 +824,10 @@ section{
     color: var(--green);
 }
 
-/* reviews */
+/*---------------------- reviews ---------------------- end*/
 
 
-/* contact */
+/* ----------------------contact --------------------- start */
 
 .contactus{
     position: relative;
@@ -1000,7 +999,8 @@ section{
 
 
 
-/* Validation */
+/* ------------- Validation ------------- */
+
 .contactus .cont-box form .cont-text input:focus,
 .contactus .cont-box form .cont-text input:not(:placeholder-shown) {
 	border-color: var(--green);
@@ -1035,12 +1035,14 @@ section{
     box-shadow: 0 0 0 .1rem rgb(142, 232, 145);
 }
 
-/* Validation */
+/* ----------- Validation ---------- */
 
-/* contact */
+/* ----------------------contact --------------------- end */
 
 
-/* footer */
+
+/* ---------------------- footer ---------------------- start */
+
 .footer{
     background: #fff;
 }
@@ -1189,10 +1191,12 @@ section{
     color: var(--green);
 }
 
-/* footer */
+/* ---------------------- footer ---------------------- end */
 
 
-/* loader */
+
+/* ---------------------- loader ---------------------------*/
+
 .loader-container{
     position: fixed;
     top: 0; left: 0;
