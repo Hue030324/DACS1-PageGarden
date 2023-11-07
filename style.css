@@ -8,8 +8,11 @@
     --light-color:#666;
     --grey:#efedf8;
     --dark-grey: #B7B7B7;
+    --white:#fff;
     --red: #FE2727;
     --light-red: #f7b4b4;
+    --light-yell: rgb(230, 194, 32);
+    --yellow: rgb(213, 167, 16);
     --border:.1rem solid rgba(0,0,0,.1);
     --border-hover:.1rem solid var(--dark-color);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -90,26 +93,40 @@ section{
 }
 /* heading end */
 
-.btn{
+.btn,
+.optn-btn{
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
     border-radius: .5rem;
     color: #fff;
-    background: var(--green);
     font-size: 1.7rem;
     cursor: pointer;
     font-weight: 500;
 }
 
-.btn i{
+.btn i,
+.optn-btn i{
     font-size: 1.5rem;
     padding-right: 1rem;
+}
+
+.btn{
+    background: var(--green);
+}
+
+.optn-btn{
+    background: var(--light-yell);
 }
 
 .btn:hover{
     background: var(--dark-color);
 }
+
+.optn-btn:hover{
+    background: var(--yellow);
+}
+
 
 /* header 1 */
 
@@ -677,7 +694,29 @@ section{
     background-attachment: fixed;
 }
 
-.newsletter form{
+ 
+.newsletter .content{
+    max-width: 60rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+ }
+ 
+.newsletter .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:var(--white);
+ }
+ 
+.newsletter .content p{
+    padding:1rem 0;
+    line-height: 1.5;
+    color:var(--dark-grey);
+    font-size: 1.7rem;
+}
+
+
+/* .newsletter form{
     max-width: 45rem;
     margin-left: auto;
     text-align: center;
@@ -704,10 +743,10 @@ section{
 .newsletter form input[type='email']:hover{
     box-shadow: 0 0 0 1px var(--light-green);
     border: 1px solid var(--green);
-}
+} */
 
 /*--------------- validation ------------------*/
-.newsletter form input[type='email']:focus,
+/* .newsletter form input[type='email']:focus,
 .newsletter form input[type='email']:focus:not(:placeholder-shown){
     border-color: var(--green);
 	background: var(--grey);
@@ -729,7 +768,7 @@ section{
 }
 .newsletter form input[type='email']:focus:invalid {
 	box-shadow: 0 0 0 .2rem var(--light-red);
-}
+} */
 /*--------------- validation ------------------*/
 
 /*---------------------- newsletter --------------------- end */
@@ -785,6 +824,42 @@ section{
 
 /*---------------------- reviews ---------------------- starts */
 
+.about .flex{
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ 
+ .about .flex .image{
+    flex:1 1 40rem;
+ }
+ 
+ .about .flex .image img{
+    width: 100%;
+ }
+ 
+ .about .flex .content{
+    flex:1 1 40rem;
+    padding:2rem;
+    background-color: var(--light-bg);
+ }
+ 
+ .about .flex .content h3{
+    font-size: 3rem;
+    color:var(--black);
+    text-transform: uppercase;
+ }
+ 
+ .about .flex .content p{
+    padding:1rem 0;
+    line-height: 2;
+    font-size: 1.7rem;
+    color:var(--light-color);
+ }
+
+
 .reviews .reviews-slider .box{
     border: var(--border);
     margin-top: 3rem;
@@ -826,6 +901,77 @@ section{
 
 /*---------------------- reviews ---------------------- end*/
 
+
+.authors .heading{
+    margin-bottom: 2.5rem;
+ }
+
+ .authors .heading span{
+    color: var(--black);
+    background: #f6f2f2;
+    border: none;
+ }
+
+.authors .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    gap:1.5rem;
+    justify-content: center;
+ }
+ 
+ .authors .box-container .box{
+    position: relative;
+    text-align: center;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border-radius: 3rem;
+ }
+ 
+ .authors .box-container .box img{
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+ }
+ 
+ .authors .box-container .box .share{
+    position: absolute;
+    top: -10rem; 
+    display: flex;
+ }
+ 
+ .authors .box-container .box:hover .share{
+    top: 1rem;
+ }
+ 
+ .authors .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background-color: var(--white);
+    border:.1rem solid rgba(0,0,0,.3);
+    display: block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color:var(--black);
+    border-radius: 3rem;
+ }
+ 
+ .authors .box-container .box .share a:hover{
+    background-color: var(--dark-color);
+    color:var(--white);
+ }
+ 
+ .authors .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding:1.5rem;
+    background-color: var(--white);
+ }
 
 /* ----------------------contact --------------------- start */
 
@@ -1039,6 +1185,43 @@ section{
 
 /* ----------------------contact --------------------- end */
 
+/* -------- place orders     */
+
+.placed-orders .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1.5rem;
+ }
+ 
+ .placed-orders .box-container .empty{
+    flex:1;
+ }
+ 
+ .placed-orders .box-container .box{
+    flex:1 1 40rem;
+    border-radius: .5rem;
+    padding:2rem;
+    border:var(--border);
+    background-color: var(--grey);
+    padding:1rem 2rem;
+    box-shadow: var(--box-shadow);
+ }
+ 
+ .placed-orders .box-container .box p{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:var(--light-color);
+ }
+ 
+ .placed-orders .box-container .box p span{
+    color:var(--green);
+ }
+
+/* -------- place orders     */
+
 
 
 /* ---------------------- footer ---------------------- start */
@@ -1094,22 +1277,23 @@ section{
 }
 
 .footer .box-container .Footbox .share{
-    padding: 1rem 1rem;
-    font-size: 1.4rem;
+    padding: 1rem;
+    /* font-size: 1.5rem; */
     color: var(--light-color);
 }
 
 .footer .box-container .Footbox .share a{
     display: inline-block;
-    width: 3.3rem;
-    height: 3.3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
     background: transparent;
     border: var(--border);
     border-color: var(--green);
     border-radius: 50%;
     text-align: center;
-    line-height: 3.3rem;
-    margin: .8rem .5rem 0;
+    margin: .5rem .5rem 0;
 }
 
 .footer .box-container .Footbox .share a:hover{
